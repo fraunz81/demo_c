@@ -1,11 +1,5 @@
-**/*.o
-**/bin
-**/*.*~
-
-# C
-**/Debug/
-
 #eclipse
 **/.cproject
 **/.project
 **/.settings/
+/Debug/
