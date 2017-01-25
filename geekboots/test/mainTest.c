@@ -1,14 +1,16 @@
 /*
- * primenumberTest.c
+ * mainTest.c
  *
- *  Created on: 06.12.2016
+ *  Created on: 25.01.2017
  *      Author: franz
  */
 
 #include <stdio.h>
 #include "../primenumber/primenumber.h"
+#include "../factorial/recursive/factorial.h"
 
-int main(int argc, char **argv)
+
+void primenumberTest()
 {
 	int zahl;
 	zahl = 1;
@@ -65,7 +67,34 @@ int main(int argc, char **argv)
 
 	llZahl = 25;
 	printf("%lld ist eine Primzahl: %d\n", llZahl, primenumber(llZahl));
+}
+
+
+void factorialRecursiveTest()
+{
+	int zahl;
+	zahl = 1;
+	printf("factorial(%d) = %d\n", zahl, factorial(zahl));
+
+	zahl = 2;
+	printf("factorial(%d) = %d\n", zahl, factorial(zahl));
+
+	zahl = 3;
+	printf("factorial(%d) = %d\n", zahl, factorial(zahl));
+
+	zahl = 4;
+	printf("factorial(%d) = %d\n", zahl, factorial(zahl));
+
+	zahl = 5;
+	printf("factorial(%d) = %d\n", zahl, factorial(zahl));
+
+}
+
+
+int main(int argc, char **argv)
+{
+	primenumberTest();
+	factorialRecursiveTest();
 
 	return 0;
 }
-
